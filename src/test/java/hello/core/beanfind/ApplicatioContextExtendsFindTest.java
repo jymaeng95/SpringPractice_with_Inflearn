@@ -14,6 +14,8 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Map;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class ApplicatioContextExtendsFindTest {
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(TestConfig.class);
 
@@ -53,7 +55,7 @@ public class ApplicatioContextExtendsFindTest {
     void findBeanByObjectType() {
         Map<String, Object> beansOfType = ac.getBeansOfType(Object.class);
         for (String key : beansOfType.keySet()) {
-            System.out.println("key = " + key+" value = "+beansOfType.get(key);
+            System.out.println("key = " + key+" value = "+beansOfType.get(key));
         }
     }
 
