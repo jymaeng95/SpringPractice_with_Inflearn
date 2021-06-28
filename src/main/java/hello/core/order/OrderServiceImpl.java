@@ -6,7 +6,10 @@ import hello.core.discount.RateDiscountPolicy;
 import hello.core.member.Member;
 import hello.core.member.MemberRepository;
 import hello.core.member.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class OrderServiceImpl implements OrderService {
     //    DIP, OCP 원칙 위배
     //    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
@@ -16,6 +19,7 @@ public class OrderServiceImpl implements OrderService {
     //인터페이스에만 의존 (의존성 주입이 필요 = 구현체 주입 필요)
     private final DiscountPolicy discountPolicy;
 
+    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
 
         this.memberRepository = memberRepository;
