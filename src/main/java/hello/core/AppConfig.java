@@ -29,8 +29,10 @@ public class AppConfig {
     public OrderService orderService() {
 
         System.out.println("AppConfig.orderService");
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+        return null;
     }
+
 
     //구현체 결정 다른 구현체 결정시 해당 부분만 코드 변경
     @Bean
