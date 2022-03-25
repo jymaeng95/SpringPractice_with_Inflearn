@@ -1,6 +1,4 @@
-package hello.core.order;
-
-import hello.core.member.Member;
+package hello.core.order.old;
 
 public class Order {
     private Long memberId;
@@ -15,9 +13,25 @@ public class Order {
         this.discountPrice = discountPrice;
     }
 
-    // 비즈니스 계산 로직
+    //비즈니스
     public int calculatePrice() {
         return itemPrice - discountPrice;
+    }
+
+    public void setMemberId(Long memberId) {
+        this.memberId = memberId;
+    }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public void setItemPrice(int itemPrice) {
+        this.itemPrice = itemPrice;
+    }
+
+    public void setDiscountPrice(int discountPrice) {
+        this.discountPrice = discountPrice;
     }
 
     public Long getMemberId() {
@@ -28,24 +42,12 @@ public class Order {
         return itemName;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
-
     public int getItemPrice() {
         return itemPrice;
     }
 
-    public void setItemPrice(int itemPrice) {
-        this.itemPrice = itemPrice;
-    }
-
     public int getDiscountPrice() {
         return discountPrice;
-    }
-
-    public void setDiscountPrice(int discountPrice) {
-        this.discountPrice = discountPrice;
     }
 
     @Override
