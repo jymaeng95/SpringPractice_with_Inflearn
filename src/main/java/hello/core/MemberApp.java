@@ -8,7 +8,10 @@ import hello.core.member.MemberServiceImpl;
 // 순수한 자바로 서비스 개발 완료 (테스트)
 public class MemberApp {
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
+
+        //        MemberService memberService = new MemberServiceImpl();
 
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
