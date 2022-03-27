@@ -10,6 +10,8 @@ public class MemberServiceTest {
 
 //    MemberService memberService = new MemberServiceImpl();
     MemberService memberService;
+
+    // 매 테스트 이전에 @BeforeEach 호출해서 안의 코드를 실행한 후 테스트를 실행한다.
     @BeforeEach
     public void beforeEach() {
         AppConfig appConfig = new AppConfig();
