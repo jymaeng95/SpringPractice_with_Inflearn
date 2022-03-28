@@ -14,6 +14,7 @@ public class OrderServiceImpl implements OrderService {
     // 클라이언트 코드의 변경 (구현체도 의존하는 경우이므로 DIP 위배)
     // private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
+    // 의존하는 인터페이스를 import나 코드를 보고 명시적으로 확인이 가능 -> 정적 클래스 의존관계
     // 현재 클라이언트 코드는 추상화(인터페이스)에만 의존 중 -> DIP 해결
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
