@@ -3,13 +3,13 @@ package hello.core.member.old;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 
 public class MemberServiceImpl implements MemberService{
     private final MemberRepository memberRepository;
 
     //자동 의존 관계 주입
-    @Autowired // ac.getBean(MemberRepository.class);
+//    @Autowired // ac.getBean(MemberRepository.class);
     public MemberServiceImpl(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }

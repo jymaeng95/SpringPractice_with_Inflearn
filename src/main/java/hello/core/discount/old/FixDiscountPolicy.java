@@ -4,7 +4,7 @@ import hello.core.member.old.Grade;
 import hello.core.member.old.Member;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class FixDiscountPolicy implements DiscountPolicy {
     private int discountixAmount = 1000;
 

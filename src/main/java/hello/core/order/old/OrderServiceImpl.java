@@ -6,7 +6,7 @@ import hello.core.member.old.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class OrderServiceImpl implements OrderService {
     //    DIP, OCP 원칙 위배
     //    private final DiscountPolicy discountPolicy = new FixDiscountPolicy();
@@ -26,7 +26,7 @@ public class OrderServiceImpl implements OrderService {
 //        this.memberRepository = memberRepository;
 //    }
 
-    @Autowired
+//    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository,  DiscountPolicy discountPolicy) {
 
         this.memberRepository = memberRepository;

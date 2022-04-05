@@ -5,8 +5,8 @@ import hello.core.member.old.Member;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
-@Primary
+//@Component
+//@Primary
 //Main DB/ Sub DB
 public class RateDiscountPolicy implements DiscountPolicy{
     private int discountPercent = 10;
