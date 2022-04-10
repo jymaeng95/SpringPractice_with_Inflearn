@@ -26,12 +26,12 @@ public class AutoAppConfigTest {
 
     }
 
-    @Test
+/*    @Test
     void DiscountPolicyTest() {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutoAppConfig.class);
 //        DiscountPolicy discountPolicy = applicationContext.getBean(DiscountPolicy.class);
 
         // DiscountPolicy가 두개가 Component로 등록된 경우는 NoUniqueBeanDefinitionException
         org.junit.jupiter.api.Assertions.assertThrows(NoUniqueBeanDefinitionException.class, () -> applicationContext.getBean(DiscountPolicy.class));
-    }
+    }*/
 }
